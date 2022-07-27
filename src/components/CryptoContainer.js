@@ -7,6 +7,7 @@ import { getCryptos } from '../redux/cryptoReducers';
 const CryptoContainer = () => {
   const myState = useSelector((state) => state.crypto);
   const dispatch = useDispatch();
+  const [searchName, setSearchName] = useSearchParams();
 
   useEffect(() => {
     if (myState.length === 0) {
@@ -14,30 +15,29 @@ const CryptoContainer = () => {
     }
   }, []);
 
-  const [search, setSearch] = useSearchParams();
   return (
-    <div className="crypto-container">
+    <div className="crypto-list-container">
       <input
-        className="search-bar"
+        className="search-crypto"
         type="text"
-        value={search.get('filter') || ''}
-        placeholder="Search by Crypto name ..."
+        value={searchName.get('coinName') || ''}
+        placeholder="Search..."
         onChange={(e) => {
-          const filter = e.target.value;
-          if (filter) {
-            setSearch({ filter });
+          const coinName = e.target.value;
+          if (coinName) {
+            setSearchName({ coinName });
           } else {
-            setSearch({});
+            setSearchName({});
           }
         }}
       />
       <div className="card-container">
         {myState
           .filter((element) => {
-            const filter = search.get('filter');
-            if (!filter) return true;
+            const coinName = searchName.get('coinName');
+            if (!coinName) return true;
             const name = element.name.toLowerCase();
-            return name.startsWith(filter.toLowerCase());
+            return name.startsWith(coinName.toLowerCase());
           })
           .map((element) => (
             <Link key={element.id} to={`/${element.id}`}>

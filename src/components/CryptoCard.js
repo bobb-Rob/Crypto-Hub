@@ -3,7 +3,7 @@ import Icon from 'react-icons-kit';
 import { arrowCircleRight } from 'react-icons-kit/fa/arrowCircleRight';
 
 const CryptoCard = ({ name, symbol, icon }) => (
-  <div className="crypto-card">
+  <div className="card">
     <i>
       <Icon icon={arrowCircleRight} size={20} />
     </i>
