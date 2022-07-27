@@ -31,10 +31,10 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: var(--blue);
-  box-shadow: 1px 1px 5px 0px #05070aad;
+  box-shadow: 1px 1px 5px 0 #05070aad;
 }
 
-header .logo span {
+.logo span {
   font-size: 1.5rem;
   font-weight: 700;
   color: #fff;
@@ -47,13 +47,13 @@ header .feature {
   gap: 15px;
 }
 
-header .feature i {
+.feature i {
   width: 1.25rem;
   color: var(--lightBlack);
 }
 
 .crypto-list-container {
-  padding: 1.875rem 1.25rem; 
+  padding: 1.875rem 1.25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -67,7 +67,7 @@ header .feature i {
   padding: 8px 15px;
   font-size: 1.25rem;
   color: rgb(184, 179, 179);
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.712);  
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.712);
 }
 
 .card-container {
@@ -88,7 +88,7 @@ header .feature i {
   width: 200px;
   height: 12.5rem;
   border-radius: 5px;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.712);  
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.712);
   text-align: center;
   padding: 10px;
 }
