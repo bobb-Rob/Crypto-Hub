@@ -61,12 +61,13 @@ header .feature i {
 }
 
 .search-crypto {
-  border: 1px solid var(--lightBlack);
+  border: none;
   border-radius: 4px;
   width: 60%;
   padding: 8px 15px;
   font-size: 1.25rem;
   color: rgb(184, 179, 179);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.712);  
 }
 
 .card-container {
@@ -75,7 +76,6 @@ header .feature i {
   justify-content: center;
   align-items: center;
   gap: 8px;
-  border: 1px solid red;
 }
 
 .card {
@@ -91,4 +91,21 @@ header .feature i {
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.712);  
   text-align: center;
   padding: 10px;
+}
+
+.card i {
+  position: absolute;
+  top: 1px;
+  right: 3px;
+  color: var(--blue);
+}
+
+.card img {
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.322);
+}
+
+.card span {
+  color: var(--blueVar1);
 }
