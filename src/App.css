@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab:wght@300;400;700;900&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #fff;
+  --blue: #0290ff;
+  --blueVar1: #4386bf;
+  --warmGrey: #888;
+  --black: #121212;
+  --lightBlack: #2a2a2a;
+  --borderLines: #e8e8e8;
+}
+
+body {
+  background-color: var(--bgc);
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--blue);
+  box-shadow: 1px 1px 5px 0px #05070aad;
+}
+
+header .logo span {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+header .feature {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+header .feature i {
+  width: 20px;
+  color: var(--lightBlack);
+}

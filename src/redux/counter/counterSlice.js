@@ -1,5 +1,5 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import { fetchCount } from './counterAPI';
+import fetchCount from './counterAPI';
 
 const initialState = {
   value: 0,
@@ -17,7 +17,7 @@ export const incrementAsync = createAsyncThunk(
     const response = await fetchCount(amount);
     // The value we return becomes the `fulfilled` action payload
     return response.data;
-  }
+  },
 );
 
 export const counterSlice = createSlice({
@@ -30,14 +30,17 @@ export const counterSlice = createSlice({
       // doesn't actually mutate the state because it uses the Immer library,
       // which detects changes to a "draft state" and produces a brand new
       // immutable state based off those changes
-      state.value += 1;
+      const newState = { ...state };
+      newState.value += 1;
     },
     decrement: (state) => {
-      state.value -= 1;
+      const newState = { ...state };
+      newState.value -= 1;
     },
     // Use the PayloadAction type to declare the contents of `action.payload`
     incrementByAmount: (state, action) => {
-      state.value += action.payload;
+      const newState = { ...state };
+      newState.value += action.payload;
     },
   },
   // The `extraReducers` field lets the slice handle actions defined elsewhere,
@@ -45,11 +48,13 @@ export const counterSlice = createSlice({
   extraReducers: (builder) => {
     builder
       .addCase(incrementAsync.pending, (state) => {
-        state.status = 'loading';
+        const newState = { ...state };
+        newState.status = 'loading';
       })
       .addCase(incrementAsync.fulfilled, (state, action) => {
-        state.status = 'idle';
-        state.value += action.payload;
+        const newState = { ...state };
+        newState.status = 'idle';
+        newState.value += action.payload;
       });
   },
 });
