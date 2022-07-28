@@ -2,7 +2,6 @@ import { configureStore } from '@reduxjs/toolkit';
 import logger from 'redux-logger';
 import cryptoReducers from './cryptoReducers';
 
-console.log(cryptoReducers);
 const store = configureStore({
   reducer: {
     crypto: cryptoReducers,
