@@ -109,3 +109,32 @@ header .feature {
 .card span {
   color: var(--blueVar1);
 }
+
+.crypto-info-head {
+  border: 1px solid red;
+
+}
+
+.crypto-info-head>div {
+  display: flex;
+  justify-content: center;
+  padding: 1.25rem;
+}
+
+.name-price {
+  flex: 1;
+  padding-left: 1rem;
+}
+
+.name-price>span:nth-child(1) {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.name-price>span {
+  font-size: 1.5rem;
+}
+
+.details-icon img {
+  width: 100px;
+}

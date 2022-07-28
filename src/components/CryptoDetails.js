@@ -1,8 +1,14 @@
+/* eslint-disable */
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useSelector } from 'react-redux/es/exports';
 import Icon from 'react-icons-kit';
-import { arrowCircleLeft } from 'react-icons-kit/fa/arrowCircleLeft';
+import { circleLeft } from 'react-icons-kit/icomoon/circleLeft';
+
+const CurrencyFormatter = (amount) => new Intl.NumberFormat('en-US', {
+  style: 'currency',
+  currency: 'USD',
+}).format(amount);
 
 const CryptoDetails = () => {
   const state = useSelector((state) => state.crypto);
@@ -10,13 +16,11 @@ const CryptoDetails = () => {
   const currentCrypto = state.find((item) => item.id === params.cryptoId);
 
   const {
-    id,
     icon,
     name,
     symbol,
     rank,
-    price,
-    priceBtc,
+    price,   
     volume,
     marketCap,
     availableSupply,
@@ -30,11 +34,33 @@ const CryptoDetails = () => {
 
   return (
     <div className="crypto-details-page">
-      <Link to="/">
+      <div className="crypto-info-head">
+        <Link to="/">
           <i className="go-back">
-            <Icon icon={arrowCircleLeft} size={25} />
+            <Icon icon={circleLeft} size={25} />
           </i>
         </Link>
+        <div>
+          <div className="details-icon">
+            <img src={icon} alt={name} />
+          </div>
+          <div className="name-price">
+            <span>
+              {name}
+            /
+              {symbol}
+            </span>
+            <br />
+            <span>{CurrencyFormatter(price)}</span>
+          </div>
+        </div>
+      </div>
+      <div className="crypto-info">
+        <div>
+          <span>Rank</span>
+          <span>{rank}</span>
+        </div>
+      </div>      
     </div>
   );
 };
