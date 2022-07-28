@@ -1,6 +1,6 @@
 # Project Name :  Crypto-Hub App
 
->[Crypto-Hub](https://my-crypto-tracker.netlify.app/) is a web application for a cryptocurrencies that provides some information about the current rank, price, volume, ... of the top 100 most used cryptocurrencies in the worlds.
+>[Crypto-Hub](crypto-hub-247.netlify.app) is a web application for a cryptocurrencies that provides some information about the current rank, price, volume, ... of the top 100 most used cryptocurrencies in the worlds.
 
 ## Screen Shots
 #### Home Page
@@ -8,6 +8,11 @@
 
 #### Detail Page
 ![Home page](crypto-page2.png)
+
+## Video Description of the project
+
+[watch here](https://www.loom.com/share/e872a6b13cf24e2ca9eb1718f29cee24)
+
 
 ## Built With
 > In order to achieve this project I used some resources and technologies listed below :
@@ -19,7 +24,7 @@
 
 ## Live Demo
 
- - Click [Here](https://my-crypto-tracker.netlify.app/) To open the live demo
+ - Click [Here](crypto-hub-247.netlify.app) To open the live demo
 
 ## Getting Started
 
@@ -37,7 +42,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Setup 🎰
 
-- Click the [me](https://github.com/Chrissiku/Crypto-Tracker) and you'll land on the pure repository;
+- Click the [me](https://github.com/bobb-Rob/Crypto-Hub.git) and you'll land on the pure repository;
 - click on the green (🟢) button with `Code` Inscription;
 - You can choose to download the project or just clone it if you are familiar with Git and Github;
 - Follow normal step once download in your computer and use it as it's yours.
