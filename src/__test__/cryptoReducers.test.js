@@ -1,17 +1,17 @@
-import cryptoReducers from "../redux/cryptoReducers";
+import cryptoReducers from '../redux/cryptoReducers';
 
 describe('test crypto reducer function', () => {
   test('if action is Undefined, CryptoReducer to return an empty array', () => {
     const initialState = [];
     const testResult = cryptoReducers(undefined, {
-      type: 'unknown'
+      type: 'unknown',
     });
     expect(testResult).toEqual(initialState);
   });
 
   test('test reducer to return new state', () => {
     const fetchData = ['a', 'b', 'c', 'd'];
-    let initialState = [];
+    const initialState = [];
 
     const result = cryptoReducers(initialState, {
       type: 'crypto/getCrypto/fulfilled',
@@ -19,5 +19,5 @@ describe('test crypto reducer function', () => {
     });
 
     expect(result).toEqual(fetchData);
-  })
-})
+  });
+});

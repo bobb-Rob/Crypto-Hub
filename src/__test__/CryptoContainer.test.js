@@ -1,8 +1,8 @@
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { render } from '@testing-library/react';
-import store from '../redux/store';
 import renderer from 'react-test-renderer';
+import store from '../redux/store';
 import CryptoContainer from '../components/CryptoContainer';
 
 describe('Test crytoContainer', () => {
@@ -10,13 +10,13 @@ describe('Test crytoContainer', () => {
 
   test('test that crytoContainer renerred correctly', () => {
     const tree = renderer
-    .create(
-      <Router>
-        <Provider store={store}>
-          <CryptoContainer />
-        </Provider>
-      </Router>
-    ).toJSON();
+      .create(
+        <Router>
+          <Provider store={store}>
+            <CryptoContainer />
+          </Provider>
+        </Router>,
+      ).toJSON();
     expect(tree).toMatchSnapshot();
   });
 
@@ -26,9 +26,8 @@ describe('Test crytoContainer', () => {
         <Provider store={store}>
           <CryptoContainer />
         </Provider>
-      </Router>
+      </Router>,
     );
     expect(store.dispatch).toHaveBeenCalledTimes(1);
   });
-
-})
+});

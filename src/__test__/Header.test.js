@@ -7,7 +7,7 @@ test('Test that Header render correctly', () => {
     .create(
       <Router>
         <Header />
-      </Router>
+      </Router>,
     ).toJSON();
-    expect(tree).toMatchSnapshot();
+  expect(tree).toMatchSnapshot();
 });
