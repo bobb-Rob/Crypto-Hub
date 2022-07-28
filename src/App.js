@@ -2,7 +2,6 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import CryptoContainer from './components/CryptoContainer';
-import CryptoDetails from './components/CryptoDetails';
 import './App.css';
 
 function App() {
@@ -11,7 +10,6 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<CryptoContainer />} />
-        <Route path=":cryptoId" exact="true" element={<CryptoDetails />} />
       </Routes>
     </div>
   );
