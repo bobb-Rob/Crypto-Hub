@@ -1,9 +1,9 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
-import CryptoContainer from './components/CryptoContainer';
-import CryptoDetails from './components/CryptoDetails';
-import './App.css';
+import Header from './component/Header';
+import CryptoContainer from './component/CryptoContainer';
+import CryptoDetails from './component/CryptoDetails';
+import './app.css';
 
 function App() {
   return (

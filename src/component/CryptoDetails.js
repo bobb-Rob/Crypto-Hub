@@ -6,7 +6,7 @@ import { circleLeft } from 'react-icons-kit/icomoon/circleLeft';
 import { longArrowRight } from 'react-icons-kit/fa/longArrowRight';
 import { twitter } from 'react-icons-kit/fa/twitter';
 import { infoCircle } from 'react-icons-kit/fa/infoCircle';
-import { getCryptos } from '../redux/cryptoReducers';
+import { getCryptos } from '../redux_files/cryptoReducers';
 
 const CurrencyFormatter = (amount) => new Intl.NumberFormat('en-US', {
   style: 'currency',

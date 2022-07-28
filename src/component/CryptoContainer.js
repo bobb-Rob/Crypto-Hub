@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useSearchParams, Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import CryptoCard from './CryptoCard';
-import { getCryptos } from '../redux/cryptoReducers';
+import { getCryptos } from '../redux_files/cryptoReducers';
 
 const CryptoContainer = () => {
   const myState = useSelector((state) => state.crypto);

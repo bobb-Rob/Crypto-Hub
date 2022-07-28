@@ -4,10 +4,10 @@
 
 ## Screen Shots
 #### Home Page
-![Home page](crypto-page1.png)
+![Home page](cryptoPage1.png)
 
 #### Detail Page
-![Home page](crypto-page2.png)
+![Home page](cryptoPage2.png)
 
 ## Video Description of the project
 
