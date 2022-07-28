@@ -2,8 +2,8 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { render } from '@testing-library/react';
 import renderer from 'react-test-renderer';
-import store from '../redux/store';
-import CryptoContainer from '../components/CryptoContainer';
+import store from '../redux_files/store';
+import CryptoContainer from '../component/CryptoContainer';
 
 describe('Test crytoContainer', () => {
   store.dispatch = jest.fn();

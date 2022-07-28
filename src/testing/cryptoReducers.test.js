@@ -1,4 +1,4 @@
-import cryptoReducers from '../redux/cryptoReducers';
+import cryptoReducers from '../redux_files/cryptoReducers';
 
 describe('test crypto reducer function', () => {
   test('if action is Undefined, CryptoReducer to return an empty array', () => {
