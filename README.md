@@ -1,10 +1,16 @@
-# Project Name :  Crypto-Tracker App
+# Project Name :  Crypto-Hub App
 
->[Crypto-Tracker](https://my-crypto-tracker.netlify.app/) is a web application for a cryptocurrencies that provides some information about the current rank, price, volume, ... of the top 100 most used cryptocurrencies in the worlds.
+>[Crypto-Hub](https://my-crypto-tracker.netlify.app/) is a web application for a cryptocurrencies that provides some information about the current rank, price, volume, ... of the top 100 most used cryptocurrencies in the worlds.
 
+## Screen Shots
+#### Home Page
+![Home page](crypto-page1.png)
 
-> In order to achieve this project I used some resources and technologies listed below :
+#### Detail Page
+![Home page](crypto-page2.png)
+
 ## Built With
+> In order to achieve this project I used some resources and technologies listed below :
 
 - Major languages : JavaScript , JSX and CSS
 - Toolchain : `Babel`
