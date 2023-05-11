@@ -1,6 +1,6 @@
 # Project Name :  Crypto-Hub App
 
->[Crypto-Hub](https://crypto-hub-247.netlify.app/) is a web application that provides detailed information about the top 100 most used cryptocurrencies in the worlds.
+>[Crypto-Hub](https://crypto-hub-247.netlify.app/) is a web-based platform designed to offer exhaustive insights into the world’s top 100 most widely adopted cryptocurrencies, inclusive of comprehensive details about their respective features, market indicators, and other relevant statistics.
 
 ## Screen Shots
 #### Home Page
